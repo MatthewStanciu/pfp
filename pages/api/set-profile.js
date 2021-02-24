@@ -8,6 +8,7 @@ export default async (req, res) => {
   const client = new WebClient();
   
   const context = require.context('../../public/images', true)
+  console.log('current directory', __dirname)
   let photos = context.keys()
   let photo = photos[Math.floor(Math.random() * photos.length)].substr(2)
   console.log('setting profile picture to', photo)
