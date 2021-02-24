@@ -13,7 +13,7 @@ export default async (req, res) => {
   let photo = photos[Math.floor(Math.random() * photos.length)].substr(2)
   console.log('setting profile picture to', photo)
 
-  const image = await fs.readFileSync('./public/images/' + photo)
+  const image = await fs.readFileSync('./images/' + photo) // ./public/images/ if testing locally
   const slackRequest = await client.users.setPhoto({
     image: image,
     token: process.env.SLACK_TOKEN,
