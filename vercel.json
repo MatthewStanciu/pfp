@@ -3,7 +3,7 @@
     "silent": true
   },
   "functions": {
-    "api/set-profile.js": {
+    "pages/api/set-profile.js": {
       "includeFiles": "public/images/**"
     }
   }
