@@ -21,7 +21,7 @@ export default async (req, res) => {
   const images = filenames.map(name => path.join('/', dirRelativeToPublicFolder, name))
   const photo = images[Math.floor(Math.random() * images.length)]
   console.log('photo directory', photo)
-  const image = await fs.readFileSync(photo)
+  const image = await fs.readFileSync('./public' + photo)
   console.log('image', image)
 
   const slackRequest = await client.users.setPhoto({
