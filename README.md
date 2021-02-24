@@ -1,3 +1,3 @@
-# 🎩 Profile pictures!
+# 🌲 Twin Peaks Day
 
-Has a serverless function deployed on Vercel, being pinged by http://uptimerobot.com every 5 minutes as well as a [web dashboard](https://change-my-pfp.now.sh).
+A fork of Sam's pfp project to set my profile picture to a random scene from Twin Peaks every 5 minutes
