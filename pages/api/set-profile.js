@@ -15,7 +15,7 @@ export default async (req, res) => {
   // console.log('setting profile picture to', photo)
   // const image = await fs.readFileSync('./images/' + photo) // ./public/images/ if testing locally
 
-  const dirRelativeToPublicFolder = 'images'
+  const dirRelativeToPublicFolder = 'single_image'
   const dir = path.resolve('./public', dirRelativeToPublicFolder);
   const filenames = fs.readdirSync(dir);
   const images = filenames.map(name => path.join('/', dirRelativeToPublicFolder, name))
